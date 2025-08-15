@@ -1,0 +1,1 @@
+/Users/e/Documents/Comercial/Reports/Scripts/ConsolidateWWPN.py

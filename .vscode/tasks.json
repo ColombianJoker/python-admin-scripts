@@ -1,0 +1,16 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "name": "Python (SAME) in Integrated Terminal",
+            "label": "Python",
+            "type": "python",
+            "program": "${file}",
+            "args": ["--vscode"],
+            "console": "integratedTerminal",
+            "stopOnEntry": true
+        }
+    ]
+}
