@@ -1,1 +1,0 @@
-/Users/e/Documents/Comercial/Reports/Scripts/SVCmap/SVCmap.py

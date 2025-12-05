@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# encoding: utf-8
-
 from tkinter import *
 import traceback
 from tkinter.scrolledtext import ScrolledText

@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 """
 Based on the pseudocode in https://en.wikipedia.org/wiki/Mersenne_Twister. Generates uniformly distributed 32-bit integers in the range [0, 232 − 1] with the MT19937 algorithm
 

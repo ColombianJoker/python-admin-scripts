@@ -25,8 +25,8 @@ def ExtractNames( HostSpec ):
   NewName = ""
   NewFullName = ""
   NewAddress = ""
-  HostSpecMatch = re.compile( "([a-zA-Z][a-zA-Z0-9_]*)=((?:[0-9]{1,3}\\.){3}[0-9]{1,3})" ).match( HostSpec )
-  HostFullSpecMatch = re.compile( "([a-zA-Z][a-zA-Z0-9_]*),([a-zA-Z][a-zA-Z0-9_]*)=((?:[0-9]{1,3}\\.){3}[0-9]{1,3})" ).match( HostSpec )
+  HostSpecMatch = re.compile( "([a-zA-Z][a-zA-Z0-9_-]*)=((?:[0-9]{1,3}\\.){3}[0-9]{1,3})" ).match( HostSpec )
+  HostFullSpecMatch = re.compile( "([a-zA-Z][a-zA-Z0-9_-]*),([a-zA-Z][a-zA-Z0-9_-]*)=((?:[0-9]{1,3}\\.){3}[0-9]{1,3})" ).match( HostSpec )
   if HostSpecMatch:
     NewName = HostSpecMatch.group( 1 )
     NewFullName = ""

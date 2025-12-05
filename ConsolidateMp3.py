@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# encoding: utf-8
 # ConsolidateMp3
 
 import os, sys, id3

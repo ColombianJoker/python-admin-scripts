@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# encoding: utf-8
 # Gets or sets EXIF comments of image files
 
 import os

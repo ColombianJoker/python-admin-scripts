@@ -1,6 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # GeneratePassword, copyright Ramon Barrios Lascar, 2012
+# Changed 2025-05-16 Magic line from /usr/bin/python to /usr/bin/env python3
+#                    from print to print()
 
 from os import urandom
 from optparse import OptionParser
@@ -14,7 +16,7 @@ def GeneratePassword(length=5,charset="aA0"):
 		if c in charsets.keys():
 			charset_string+=charsets[c]
 	while len(password)<length:
-		c=urandom(1)
+		c=str(urandom(1))
 		if c in charset_string and c!=lc:
 			password+=c;lc=c
 	return password
@@ -29,6 +31,6 @@ if __name__=="__main__":
   Opts.PrgName = "GeneratePassword"
   
   if (Opts.Verbose):
-    print "%s: %s [%s,\"%s\"]" % (Opts.PrgName, GeneratePassword(Opts.PasswordLength,Opts.CharsetString), Opts.PasswordLength, Opts.CharsetString)
+    print( "%s: %s [%s,\"%s\"]" % (Opts.PrgName, GeneratePassword(Opts.PasswordLength,Opts.CharsetString), Opts.PasswordLength, Opts.CharsetString))
   else:
-    print "%s" % (GeneratePassword(Opts.PasswordLength,Opts.CharsetString),)
+    print( "%s" % (GeneratePassword(Opts.PasswordLength,Opts.CharsetString),))
