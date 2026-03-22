@@ -18,7 +18,7 @@ Changed 2022-05-24: Changed to store date of hash only optionally
 Changed 2023-02-05: Changed to use file timestamps optionally
 Changed 2023-04-01: Progress indicators on stderr
 Changed 2024-03-09: Changed format strings
-Changed 2025-09-05: Changed xattr name prefix to be option `xattr-prefix` wit default
+Changed 2025-09-05: Changed xattr name prefix to be option `xattr-prefix` with default
 Changed 2025-10-15: Defaults to skips empty files, with an option to process them
 Copyright (c) 2007-2025 Ínodo S.A.S. All rights reserved.
 """
